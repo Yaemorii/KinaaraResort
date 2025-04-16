@@ -10,6 +10,32 @@
   <link rel="icon" href="img/KinaaraResortLogo.jpg" sizes="32x32" />
   <link rel="icon" href="img/KinaaraResortLogo.png" sizes="192x192" />
   <style>
+    /* Tambahkan media query untuk mobile */
+    @media (max-width: 576px) {
+        .login-container {
+            padding: 1.5rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+        }
+        
+        .logo {
+            width: 100px;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+    
+    /* Untuk modal di mobile */
+    @media (max-width: 576px) {
+        .modal-dialog {
+            margin: 0.5rem auto;
+            max-width: 95%;
+        }
+    }
+    
+    /* Style yang sudah ada tetap dipertahankan */
     body {
       background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
       background-size: cover;
@@ -38,7 +64,7 @@
       margin: 0 auto 20px;
       width: 120px;
     }
-  </style>
+</style>
 </head>
 
 <body>
@@ -66,6 +92,11 @@
           <a href="#" data-bs-toggle="modal" data-bs-target="#forgotModal">Lupa Sandi?</a>
         </div>
         <button type="submit" class="btn btn-success w-100">Login</button>
+        <div class="text-center mt-3">
+          <a href="{{ url('/') }}" class="text-decoration-none">
+            <i class="fas fa-arrow-left me-1"></i> Kembali ke Beranda
+          </a>
+        </div>
       </form>
     </div>
   </div>

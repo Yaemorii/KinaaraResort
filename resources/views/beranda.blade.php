@@ -1,3 +1,11 @@
+@php
+use App\Models\Room;
+
+$lumbungSuite = Room::where('name', 'Lumbung Suite')->first();
+$walekayuSuite = Room::where('name', 'Walekayu Suite')->first();
+$walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: https://ogp.me/ns#">
 
@@ -2039,15 +2047,26 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="elementor-element elementor-element-32ee4d2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
-                                                                data-id="32ee4d2" data-element_type="widget"
-                                                                data-widget_type="heading.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <h3
-                                                                        class="elementor-heading-title elementor-size-default">
-                                                                        Harga : Rp. 850.000 / Malam</h3>
-                                                                </div>
-                                                            </div>
+                                                            <!-- Untuk Lumbung Suite -->
+<div class="elementor-element elementor-element-32ee4d2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+data-id="32ee4d2" data-element_type="widget"
+data-widget_type="heading.default">
+<div class="elementor-widget-container">
+    <h3 class="elementor-heading-title elementor-size-default">
+        Harga : Rp. {{ number_format($lumbungSuite->price, 0, ',', '.') }} / Malam
+    </h3>
+</div>
+</div>
+
+<div class="elementor-element elementor-element-sisakamar-lumbung-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+data-id="sisakamar-lumbung-suite" data-element_type="widget"
+data-widget_type="heading.default">
+<div class="elementor-widget-container">
+    <h3 class="elementor-heading-title elementor-size-default">
+        Sisa Kamar: {{ $lumbungSuite->available ?? 0 }}
+    </h3>
+</div>
+</div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -2411,9 +2430,20 @@
                                                                 <div class="elementor-widget-container">
                                                                     <h3
                                                                         class="elementor-heading-title elementor-size-default">
-                                                                        Harga : Rp. 1.100.000 / Malam</h3>
+                                                                        Harga : Rp. {{ number_format($walekayuSuite->price, 0, ',', '.') }} / Malam
+                                                                    </h3>
                                                                 </div>
                                                             </div>
+                                                            <!-- Untuk Walekayu Suite -->
+<div class="elementor-element elementor-element-sisakamar-walekayu-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+data-id="sisakamar-walekayu-suite" data-element_type="widget"
+data-widget_type="heading.default">
+<div class="elementor-widget-container">
+    <h3 class="elementor-heading-title elementor-size-default">
+        Sisa Kamar: {{ $walekayuSuite->available ?? 0 }}
+    </h3>
+</div>
+</div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -2777,9 +2807,20 @@
                                                                 <div class="elementor-widget-container">
                                                                     <h3
                                                                         class="elementor-heading-title elementor-size-default">
-                                                                        Harga : Rp. 1.500.000 / Malam</h3>
+                                                                        Harga : Rp. {{ number_format($walekayuFamily->price, 0, ',', '.') }} / Malam
+                                                                    </h3>
                                                                 </div>
                                                             </div>
+                                                            <!-- Tambahan: Sisa Kamar -->
+                                                            <div class="elementor-element elementor-element-sisakamar-walekayu-family elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+    data-id="sisakamar-walekayu-family" data-element_type="widget"
+    data-widget_type="heading.default">
+    <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">
+            Sisa Kamar: {{ $walekayuFamily->available ?? 0 }}
+        </h3>
+    </div>
+</div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -4008,7 +4049,8 @@
                                                                     <span class="elementor-icon-list-icon">
                                                                         <i class="fa-brands fa-whatsapp"></i>
                                                                     </span>
-                                                                    <span class="elementor-icon-list-text">+62 852 5298 0695
+                                                                    <span class="elementor-icon-list-text">+62 852
+                                                                        5298 0695
 
                                                                     </span>
                                                                 </a>
@@ -4018,7 +4060,8 @@
                                                                     <span class="elementor-icon-list-icon">
                                                                         <i class="fa-brands fa-whatsapp"></i>
                                                                     </span>
-                                                                    <span class="elementor-icon-list-text">⁠+62 812 8859 8899</span>
+                                                                    <span
+                                                                        class="elementor-icon-list-text">⁠+62 812 8859 8899</span>
                                                                 </a>
 
                                                             <li class="elementor-icon-list-item">
@@ -4312,7 +4355,7 @@
                                 <span class="elementor-icon-list-text">Login</span>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
