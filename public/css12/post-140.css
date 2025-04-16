@@ -1,0 +1,111 @@
+.elementor-140 .elementor-element.elementor-element-3f2828e5 {
+    --display: flex;
+    --flex-direction: row;
+    --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );
+    --container-widget-height: 100%;
+    --container-widget-flex-grow: 1;
+    --container-widget-align-self: stretch;
+    --flex-wrap-mobile: wrap;
+    --align-items: stretch;
+    --overlay-opacity: 0.71;
+    --padding-top: 160px;
+    --padding-bottom: 140px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+}
+
+.elementor-140 .elementor-element.elementor-element-3f2828e5:not(.elementor-motion-effects-element-type-background), .elementor-140 .elementor-element.elementor-element-3f2828e5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("/img/Kinaara14.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementor-140 .elementor-element.elementor-element-3f2828e5::before, .elementor-140 .elementor-element.elementor-element-3f2828e5 > .elementor-background-video-container::before, .elementor-140 .elementor-element.elementor-element-3f2828e5 > .e-con-inner > .elementor-background-video-container::before, .elementor-140 .elementor-element.elementor-element-3f2828e5 > .elementor-background-slideshow::before, .elementor-140 .elementor-element.elementor-element-3f2828e5 > .e-con-inner > .elementor-background-slideshow::before, .elementor-140 .elementor-element.elementor-element-3f2828e5 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before {
+    background-color: #18243D;
+    --background-overlay: '';
+}
+
+.elementor-140 .elementor-element.elementor-element-538b24fd {
+    --display: flex;
+    --justify-content: center;
+    --align-items: center;
+    --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );
+    --gap: 10px 10px;
+    --row-gap: 10px;
+    --column-gap: 10px;
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 10px;
+    --padding-right: 10px;
+}
+
+.elementor-140 .elementor-element.elementor-element-d28bed8 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.elementor-140 .elementor-element.elementor-element-d28bed8 .elementor-heading-title {
+    color: #FFFFFF;
+}
+
+.elementor-140 .elementor-element.elementor-element-3809633 > .elementor-widget-container {
+    padding: 25px 0px 0px 0px;
+}
+
+@media(max-width: 1024px) and (min-width:768px) {
+    .elementor-140 .elementor-element.elementor-element-538b24fd {
+        --width:100%;
+    }
+}
+
+@media(min-width: 1025px) {
+    .elementor-140 .elementor-element.elementor-element-3f2828e5:not(.elementor-motion-effects-element-type-background), .elementor-140 .elementor-element.elementor-element-3f2828e5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-attachment:fixed;
+    }
+}
+
+@media(max-width: 1024px) {
+    .elementor-140 .elementor-element.elementor-element-3f2828e5 {
+        --align-items:flex-start;
+        --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );
+        --flex-wrap: wrap;
+        --padding-top: 160px;
+        --padding-bottom: 100px;
+        --padding-left: 10px;
+        --padding-right: 10px;
+    }
+
+    .elementor-140 .elementor-element.elementor-element-538b24fd {
+        --padding-top: 0px;
+        --padding-bottom: 40px;
+        --padding-left: 10px;
+        --padding-right: 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .elementor-140 .elementor-element.elementor-element-3f2828e5 {
+        --padding-top:140px;
+        --padding-bottom: 60px;
+        --padding-left: 10px;
+        --padding-right: 10px;
+    }
+
+    .elementor-140 .elementor-element.elementor-element-538b24fd {
+        --padding-top: 0px;
+        --padding-bottom: 0px;
+        --padding-left: 0px;
+        --padding-right: 0px;
+    }
+
+    .elementor-140 .elementor-element.elementor-element-d28bed8 > .elementor-widget-container {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .elementor-140 .elementor-element.elementor-element-d28bed8 .elementor-heading-title {
+        font-size: 23px;
+    }
+}
