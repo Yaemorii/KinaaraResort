@@ -96,3 +96,8 @@ Route::post('/logout', [AuthController::class, 'logout'])
             Route::resource('users', UserController::class)->except(['index', 'show']);
         });
     });
+
+    Route::post('/send-verification', [AuthController::class, 'sendVerificationCode'])->name('password.email');
+    Route::get('/verify-code', [AuthController::class, 'showVerifyForm'])->name('password.verify');
+    Route::post('/reset-password', [AuthController::class, 'verifyCodeAndResetPassword'])
+    ->name('password.reset');

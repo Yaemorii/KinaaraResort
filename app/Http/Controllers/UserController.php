@@ -26,6 +26,7 @@ class UserController extends Controller
             'username' => 'required|unique:users',
             'password' => 'required|min:6',
             'phone' => 'nullable',
+            'email' => 'nullable|email|unique:users',
             'role' => 'required|in:super_admin,admin'
         ]);
 
@@ -33,10 +34,11 @@ class UserController extends Controller
             'username' => $request->username,
             'password' => bcrypt($request->password),
             'phone' => $request->phone,
+            'email' => $request->email,
             'role' => $request->role
         ]);
 
-        return redirect()->back()->with('success', 'Akun berhasil ditambahkan');
+        return redirect()->back()->with('success', 'Akun admin baru berhasil dibuat!');
     }
 
     public function update(Request $request, $id)
@@ -44,14 +46,19 @@ class UserController extends Controller
         $request->validate([
             'username' => 'required|unique:users,username,'.$id,
             'phone' => 'nullable',
+            'email' => 'nullable|email|unique:users,email,'.$id,
             'role' => 'required|in:super_admin,admin',
             'password' => 'nullable|min:6'
         ]);
 
         $user = User::findOrFail($id);
+        if ($user->id === auth()->id() && $request->role !== auth()->user()->role) {
+            return redirect()->back()->with('error', 'Anda tidak dapat mengubah role akun sendiri!');
+        }
         $data = [
             'username' => $request->username,
             'phone' => $request->phone,
+            'email' => $request->email,
             'role' => $request->role
         ];
 
@@ -61,12 +68,15 @@ class UserController extends Controller
 
         $user->update($data);
 
-        return redirect()->back()->with('success', 'Akun berhasil diperbarui');
+        return redirect()->back()->with('success', 'Data akun berhasil diperbarui!');
     }
 
     public function destroy($id)
     {
         $user = User::findOrFail($id);
+        if ($user->id === auth()->id()) {
+            return redirect()->back()->with('error', 'Anda tidak dapat menghapus akun sendiri!');
+        }
         $user->delete();
 
         return redirect()->back()->with('success', 'Akun berhasil dihapus');

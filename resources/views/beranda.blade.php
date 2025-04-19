@@ -1,9 +1,9 @@
 @php
-use App\Models\Room;
+    use App\Models\Room;
 
-$lumbungSuite = Room::where('name', 'Lumbung Suite')->first();
-$walekayuSuite = Room::where('name', 'Walekayu Suite')->first();
-$walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
+    $lumbungSuite = Room::where('name', 'Lumbung Suite')->first();
+    $walekayuSuite = Room::where('name', 'Walekayu Suite')->first();
+    $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
 @endphp
 
 <!DOCTYPE html>
@@ -1151,7 +1151,7 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                 <div class="elementor-widget-container">
                                     <img decoding="async" width="455" height="500" src="img/Kinaara2.jpg"
                                         class="attachment-large size-large wp-image-174" alt=""
-                                        srcset="img/Kinaara2.jpg 600w, img/Kinaara3-300x400.png 300w"
+                                        srcset="img/Kinaara2.jpg 600w, img/Kinaara2.jpg 300w"
                                         sizes="(max-width: 600px) 100vw, 600px" />
                                 </div>
                             </div>
@@ -2048,25 +2048,30 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                 </div>
                                                             </div>
                                                             <!-- Untuk Lumbung Suite -->
-<div class="elementor-element elementor-element-32ee4d2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
-data-id="32ee4d2" data-element_type="widget"
-data-widget_type="heading.default">
-<div class="elementor-widget-container">
-    <h3 class="elementor-heading-title elementor-size-default">
-        Harga : Rp. {{ number_format($lumbungSuite->price, 0, ',', '.') }} / Malam
-    </h3>
-</div>
-</div>
+                                                            <div class="elementor-element elementor-element-32ee4d2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+                                                                data-id="32ee4d2" data-element_type="widget"
+                                                                data-widget_type="heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <h3
+                                                                        class="elementor-heading-title elementor-size-default">
+                                                                        Harga : Rp.
+                                                                        {{ number_format($lumbungSuite->price, 0, ',', '.') }}
+                                                                        / Malam
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
 
-<div class="elementor-element elementor-element-sisakamar-lumbung-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
-data-id="sisakamar-lumbung-suite" data-element_type="widget"
-data-widget_type="heading.default">
-<div class="elementor-widget-container">
-    <h3 class="elementor-heading-title elementor-size-default">
-        Sisa Kamar: {{ $lumbungSuite->available ?? 0 }}
-    </h3>
-</div>
-</div>
+                                                            <div class="elementor-element elementor-element-sisakamar-lumbung-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+                                                                data-id="sisakamar-lumbung-suite"
+                                                                data-element_type="widget"
+                                                                data-widget_type="heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <h3
+                                                                        class="elementor-heading-title elementor-size-default">
+                                                                        Sisa Kamar: {{ $lumbungSuite->available ?? 0 }}
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -2410,7 +2415,7 @@ data-widget_type="heading.default">
                                                                         <div class="elementor-star-rating__title">5
                                                                         </div>
                                                                         <div class="elementor-star-rating"
-                                                                            title="4.9/5"
+                                                                            title="5/5"
                                                                             itemtype="http://schema.org/Rating"
                                                                             itemscope="" itemprop="reviewRating">
                                                                             <i class="elementor-star-full">&#9733;</i>
@@ -2424,26 +2429,30 @@ data-widget_type="heading.default">
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <!-- Untuk Walekayu Suite -->
                                                             <div class="elementor-element elementor-element-32ee4d2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
                                                                 data-id="32ee4d2" data-element_type="widget"
                                                                 data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
                                                                     <h3
                                                                         class="elementor-heading-title elementor-size-default">
-                                                                        Harga : Rp. {{ number_format($walekayuSuite->price, 0, ',', '.') }} / Malam
+                                                                        Harga : Rp.
+                                                                        {{ number_format($walekayuSuite->price, 0, ',', '.') }}
+                                                                        / Malam
                                                                     </h3>
                                                                 </div>
                                                             </div>
-                                                            <!-- Untuk Walekayu Suite -->
-<div class="elementor-element elementor-element-sisakamar-walekayu-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
-data-id="sisakamar-walekayu-suite" data-element_type="widget"
-data-widget_type="heading.default">
-<div class="elementor-widget-container">
-    <h3 class="elementor-heading-title elementor-size-default">
-        Sisa Kamar: {{ $walekayuSuite->available ?? 0 }}
-    </h3>
-</div>
-</div>
+                                                            <div class="elementor-element elementor-element-sisakamar-walekayu-suite elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+                                                                data-id="sisakamar-walekayu-suite"
+                                                                data-element_type="widget"
+                                                                data-widget_type="heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <h3
+                                                                        class="elementor-heading-title elementor-size-default">
+                                                                        Sisa Kamar: {{ $walekayuSuite->available ?? 0 }}
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -2807,20 +2816,24 @@ data-widget_type="heading.default">
                                                                 <div class="elementor-widget-container">
                                                                     <h3
                                                                         class="elementor-heading-title elementor-size-default">
-                                                                        Harga : Rp. {{ number_format($walekayuFamily->price, 0, ',', '.') }} / Malam
+                                                                        Harga : Rp.
+                                                                        {{ number_format($walekayuFamily->price, 0, ',', '.') }}
+                                                                        / Malam
                                                                     </h3>
                                                                 </div>
                                                             </div>
-                                                            <!-- Tambahan: Sisa Kamar -->
                                                             <div class="elementor-element elementor-element-sisakamar-walekayu-family elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
-    data-id="sisakamar-walekayu-family" data-element_type="widget"
-    data-widget_type="heading.default">
-    <div class="elementor-widget-container">
-        <h3 class="elementor-heading-title elementor-size-default">
-            Sisa Kamar: {{ $walekayuFamily->available ?? 0 }}
-        </h3>
-    </div>
-</div>
+                                                                data-id="sisakamar-walekayu-family"
+                                                                data-element_type="widget"
+                                                                data-widget_type="heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <h3
+                                                                        class="elementor-heading-title elementor-size-default">
+                                                                        Sisa Kamar:
+                                                                        {{ $walekayuFamily->available ?? 0 }}
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
                                                             <div class="elementor-element elementor-element-bc142c2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                                 data-id="bc142c2" data-element_type="widget"
                                                                 data-widget_type="icon-list.default">
@@ -4355,7 +4368,6 @@ data-widget_type="heading.default">
                                 <span class="elementor-icon-list-text">Login</span>
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </div>

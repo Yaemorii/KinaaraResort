@@ -44,14 +44,14 @@
     <meta name="twitter:label2" content="Time to read" />
     <meta name="twitter:data2" content="Less than a minute" />
     <script>
-        document.addEventListener("contextmenu", function (e) {
+        document.addEventListener("contextmenu", function(e) {
             e.preventDefault();
         });
 
-        document.addEventListener("keydown", function (e) {
+        document.addEventListener("keydown", function(e) {
             if (
-                e.key === "F12" || 
-                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
+                e.key === "F12" ||
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
                 (e.ctrlKey && e.key === "U")
             ) {
                 e.preventDefault();
@@ -1217,6 +1217,11 @@
                         <li class="elementor-icon-list-item">
                             <a href="/kontak">
                                 <span class="elementor-icon-list-text">Kontak</span>
+                            </a>
+                        </li>
+                        <li class="elementor-icon-list-item login-menu-item">
+                            <a href="/login">
+                                <span class="elementor-icon-list-text">Login</span>
                             </a>
                         </li>
                     </ul>

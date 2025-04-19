@@ -21,13 +21,15 @@ class UserSeeder extends Seeder
         'username' => 'superadmin',
         'password' => Hash::make('bjb1234'),
         'phone' => '087716965894',
+        'email' => 'suadmkinaara@gmail.com',
         'role' => 'super_admin'
     ]);
     
     User::create([
         'username' => 'admin',
         'password' => Hash::make('admin123'),
-        'phone' => '081234567890',
+        'phone' => '08990041550',
+        'email' => 'adm1kinaara@gmail.com',
         'role' => 'admin'
     ]);
 }
