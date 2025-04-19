@@ -337,7 +337,7 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="logo-container text-center">
-            <img src="/img/kinaararesortlogo.png" alt="Logo" width="120" class="img-fluid">
+            <img src="/img/KinaaraResortLogo.png" alt="Logo" width="120" class="img-fluid">
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">

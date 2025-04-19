@@ -795,9 +795,9 @@
                                     data-id="747275d" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <img fetchpriority="high" fetchpriority="high" decoding="async"
-                                            width="481" height="614" src="img/kinaara17.jpg"
+                                            width="481" height="614" src="img/Kinaara17.jpg"
                                             class="attachment-full size-full wp-image-110" alt=""
-                                            srcset="img/kinaara17.jpg 481w, img/kinaara17.jpg 235w"
+                                            srcset="img/Kinaara17.jpg 481w, img/Kinaara17.jpg 235w"
                                             sizes="(max-width: 481px) 100vw, 481px" />
                                     </div>
                                 </div>

@@ -115,7 +115,7 @@
 <body>
 <div class="container">
     <div class="verify-container">
-        <img src="/img/kinaararesortlogo.png" alt="Kinaara Resort Logo" class="logo">
+        <img src="/img/KinaaraResortLogo.png" alt="Kinaara Resort Logo" class="logo">
         <h4 class="text-center mb-4">Verifikasi Kode</h4>
 
         <form id="resetPasswordForm" method="POST" action="{{ route('password.reset') }}">

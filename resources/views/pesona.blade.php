@@ -749,10 +749,10 @@
                         <div class="elementor-widget-container">
                             <div class="jeg-elementor-kit jkit-post-featured-image jeg_module_305_1_67da8b3abab82">
                                 <div class="post-featured-image ">
-                                    <img width="680" height="510" src="/img/kinaara6.jpg"
+                                    <img width="680" height="510" src="/img/Kinaara6.jpg"
                                         class="attachment-full size-full wp-post-image" alt=""
                                         decoding="async"
-                                        srcset="/img/kinaara6.jpg 680w, /img/kinaara6.jpg 300w"
+                                        srcset="/img/Kinaara6.jpg 680w, /img/Kinaara6.jpg 300w"
                                         sizes="(max-width: 680px) 100vw, 680px" />
                                 </div>
                             </div>

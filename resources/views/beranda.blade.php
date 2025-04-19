@@ -3767,9 +3767,9 @@
                             data-id="67fb2ff" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img loading="lazy" loading="lazy" decoding="async" width="680"
-                                    height="510" src="img/kinaara3.jpg"
+                                    height="510" src="img/Kinaara3.jpg"
                                     class="attachment-large size-large wp-image-169" alt=""
-                                    srcset="img/kinaara3.jpg 680w, img/kinaara3.jpg 300w"
+                                    srcset="img/Kinaara3.jpg 680w, img/Kinaara3.jpg 300w"
                                     sizes="auto, (max-width: 680px) 100vw, 680px" />
                             </div>
                         </div>

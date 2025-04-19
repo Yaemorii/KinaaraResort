@@ -99,7 +99,7 @@
 <body>
   <div class="container">
     <div class="login-container">
-      <img src="/img/kinaararesortlogo.png" alt="Kinaara Resort Logo" class="logo">
+      <img src="/img/KinaaraResortLogo.png" alt="Kinaara Resort Logo" class="logo">
       <h4 class="text-center mb-4">Login Admin</h4>
       @if(session('success_reset'))
     <div class="alert alert-success alert-dismissible fade show mb-4">
