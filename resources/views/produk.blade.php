@@ -1,9 +1,9 @@
 @php
-use App\Models\Room;
+    use App\Models\Room;
 
-$lumbungSuite = Room::where('name', 'Lumbung Suite')->first();
-$walekayuSuite = Room::where('name', 'Walekayu Suite')->first();
-$walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
+    $lumbungSuite = Room::where('name', 'Lumbung Suite')->first();
+    $walekayuSuite = Room::where('name', 'Walekayu Suite')->first();
+    $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
 @endphp
 
 <!DOCTYPE html>
@@ -1419,7 +1419,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                     <ul class="elementor-icon-list-items">
                                                                         <li class="elementor-icon-list-item">
                                                                             <span
-                                                                                class="elementor-icon-list-text">Fasilitas Unggulan:</span>
+                                                                                class="elementor-icon-list-text">Fasilitas
+                                                                                Unggulan:</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1475,7 +1476,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Saluran Kabel</span>
+                                                                                class="elementor-icon-list-text">Saluran
+                                                                                Kabel</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1489,7 +1491,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Balkon dengan kursi</span>
+                                                                                class="elementor-icon-list-text">Balkon
+                                                                                dengan kursi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1503,7 +1506,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kipas Angin langit-langit</span>
+                                                                                class="elementor-icon-list-text">Kipas
+                                                                                Angin langit-langit</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1517,7 +1521,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kamar Mandi Pribadi</span>
+                                                                                class="elementor-icon-list-text">Kamar
+                                                                                Mandi Pribadi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1531,7 +1536,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Perlengkapan Mandi</span>
+                                                                                class="elementor-icon-list-text">Perlengkapan
+                                                                                Mandi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1545,7 +1551,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Gorden/Tirai kedap cahaya</span>
+                                                                                class="elementor-icon-list-text">Gorden/Tirai
+                                                                                kedap cahaya</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1559,7 +1566,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Sarapan untuk 2 Orang</span>
+                                                                                class="elementor-icon-list-text">Sarapan
+                                                                                untuk 2 Orang</span>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -1699,7 +1707,7 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                 <style id="loop-dynamic-327">
                                     .e-loop-item-234 .elementor-element.elementor-element-20e5cfe:not(.elementor-motion-effects-element-type-background),
                                     .e-loop-item-234 .elementor-element.elementor-element-20e5cfe>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-                                        background-image: url("/img/walekayusuite.jpg");
+                                        background-image: url("/img/WalekayuSuite.jpg");
                                     }
                                 </style>
                                 <div data-elementor-type="loop-item" data-elementor-id="327"
@@ -1790,7 +1798,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                     <ul class="elementor-icon-list-items">
                                                                         <li class="elementor-icon-list-item">
                                                                             <span
-                                                                                class="elementor-icon-list-text">Fasilitas Unggulan:</span>
+                                                                                class="elementor-icon-list-text">Fasilitas
+                                                                                Unggulan:</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1846,7 +1855,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Saluran Kabel</span>
+                                                                                class="elementor-icon-list-text">Saluran
+                                                                                Kabel</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1860,7 +1870,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Balkon dengan kursi</span>
+                                                                                class="elementor-icon-list-text">Balkon
+                                                                                dengan kursi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1874,7 +1885,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kipas Angin langit-langit</span>
+                                                                                class="elementor-icon-list-text">Kipas
+                                                                                Angin langit-langit</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1888,7 +1900,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kamar Mandi Pribadi</span>
+                                                                                class="elementor-icon-list-text">Kamar
+                                                                                Mandi Pribadi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1902,7 +1915,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Perlengkapan Mandi</span>
+                                                                                class="elementor-icon-list-text">Perlengkapan
+                                                                                Mandi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1916,7 +1930,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Gorden/Tirai kedap cahaya</span>
+                                                                                class="elementor-icon-list-text">Gorden/Tirai
+                                                                                kedap cahaya</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -1930,7 +1945,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Sarapan untuk 2 Orang</span>
+                                                                                class="elementor-icon-list-text">Sarapan
+                                                                                untuk 2 Orang</span>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -2070,7 +2086,7 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                 <style id="loop-dynamic-327">
                                     .e-loop-item-235 .elementor-element.elementor-element-20e5cfe:not(.elementor-motion-effects-element-type-background),
                                     .e-loop-item-235 .elementor-element.elementor-element-20e5cfe>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-                                        background-image: url("/img/walekayufamilysuite.jpg");
+                                        background-image: url("/img/WalekayuFamilySuite.jpg");
                                     }
                                 </style>
                                 <div data-elementor-type="loop-item" data-elementor-id="327"
@@ -2162,7 +2178,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                     <ul class="elementor-icon-list-items">
                                                                         <li class="elementor-icon-list-item">
                                                                             <span
-                                                                                class="elementor-icon-list-text">Fasilitas Unggulan:</span>
+                                                                                class="elementor-icon-list-text">Fasilitas
+                                                                                Unggulan:</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2218,7 +2235,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Saluran Kabel</span>
+                                                                                class="elementor-icon-list-text">Saluran
+                                                                                Kabel</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2232,7 +2250,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Balkon dengan kursi</span>
+                                                                                class="elementor-icon-list-text">Balkon
+                                                                                dengan kursi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2246,7 +2265,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kipas Angin langit-langit</span>
+                                                                                class="elementor-icon-list-text">Kipas
+                                                                                Angin langit-langit</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2260,7 +2280,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Kamar Mandi Pribadi</span>
+                                                                                class="elementor-icon-list-text">Kamar
+                                                                                Mandi Pribadi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2274,7 +2295,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Perlengkapan Mandi</span>
+                                                                                class="elementor-icon-list-text">Perlengkapan
+                                                                                Mandi</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2288,7 +2310,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Gorden/Tirai kedap cahaya</span>
+                                                                                class="elementor-icon-list-text">Gorden/Tirai
+                                                                                kedap cahaya</span>
                                                                         </li>
                                                                         <li class="elementor-icon-list-item">
                                                                             <span class="elementor-icon-list-icon">
@@ -2302,7 +2325,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                                 </svg>
                                                                             </span>
                                                                             <span
-                                                                                class="elementor-icon-list-text">Sarapan untuk 4 Orang</span>
+                                                                                class="elementor-icon-list-text">Sarapan
+                                                                                untuk 4 Orang</span>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -2483,16 +2507,19 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                             </div>
                             <div class="gallery-items">
                                 <div id="portfolio-gallery-tab-0" class="image-item current-item"
-                                    data-background="/img/Kinaara15.jpg" style="background-image:url(/img/Kinaara15.jpg);">
+                                    data-background="/img/Kinaara15.jpg"
+                                    style="background-image:url(/img/Kinaara15.jpg);">
                                 </div>
                                 <div id="portfolio-gallery-tab-1" class="image-item "
-                                    data-background="/img/Kinaara38.jpg" style="background-image:url(/img/Kinaara38.jpg);">
+                                    data-background="/img/Kinaara38.jpg"
+                                    style="background-image:url(/img/Kinaara38.jpg);">
                                 </div>
                                 <div id="portfolio-gallery-tab-2" class="image-item "
                                     data-background="/img/Kinaara33.jpg"
                                     style="background-image:url(/img/Kinaara33.jpg);"></div>
                                 <div id="portfolio-gallery-tab-3" class="image-item "
-                                    data-background="/img/Kinaara39.jpg" style="background-image:url(/img/Kinaara39.jpg);">
+                                    data-background="/img/Kinaara39.jpg"
+                                    style="background-image:url(/img/Kinaara39.jpg);">
                                 </div>
                             </div>
                         </div>
@@ -2527,110 +2554,110 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                             data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <!-- Tombol asli Elementor -->
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-button-wrapper">
-                                                    <button
-                                                        class="elementor-button elementor-button-link elementor-size-sm"
-                                                        onclick="showContactOptionsHubungi()">
-                                                        <span class="elementor-button-content-wrapper">
-                                                            <span class="elementor-button-text">Hubungi Kami</span>
-                                                        </span>
-                                                    </button>
+                                                <div class="elementor-widget-container">
+                                                    <div class="elementor-button-wrapper">
+                                                        <button
+                                                            class="elementor-button elementor-button-link elementor-size-sm"
+                                                            onclick="showContactOptionsHubungi()">
+                                                            <span class="elementor-button-content-wrapper">
+                                                                <span class="elementor-button-text">Hubungi Kami</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <!-- Popup Pilihan Admin -->
-                                            <div id="contactOptionsHubungi" class="contact-popup">
-                                                <div class="contact-popup-inner">
-                                                    <p>Pilih Admin yang ingin dihubungi:</p>
-                                                    <button class="wa-button"
-                                                        onclick="openWhatsAppHubungi('085252980695')">Admin 1
-                                                        (085252980695)</button>
-                                                    <button class="wa-button"
-                                                        onclick="openWhatsAppHubungi('081288598899')">Admin 2
-                                                        (081288598899)</button>
-                                                    <button class="cancel-button"
-                                                        onclick="hideContactOptionsHubungi()">Batal</button>
+                                                <!-- Popup Pilihan Admin -->
+                                                <div id="contactOptionsHubungi" class="contact-popup">
+                                                    <div class="contact-popup-inner">
+                                                        <p>Pilih Admin yang ingin dihubungi:</p>
+                                                        <button class="wa-button"
+                                                            onclick="openWhatsAppHubungi('085252980695')">Admin 1
+                                                            (085252980695)</button>
+                                                        <button class="wa-button"
+                                                            onclick="openWhatsAppHubungi('081288598899')">Admin 2
+                                                            (081288598899)</button>
+                                                        <button class="cancel-button"
+                                                            onclick="hideContactOptionsHubungi()">Batal</button>
+                                                    </div>
                                                 </div>
+
+                                                <!-- Styling -->
+                                                <style>
+                                                    .contact-popup {
+                                                        display: none;
+                                                        position: fixed;
+                                                        inset: 0;
+                                                        background: rgba(0, 0, 0, 0.4);
+                                                        z-index: 9999;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+
+                                                    .contact-popup-inner {
+                                                        background: #fff;
+                                                        padding: 25px 30px;
+                                                        border-radius: 12px;
+                                                        text-align: center;
+                                                        max-width: 90%;
+                                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                                                    }
+
+                                                    .contact-popup-inner p {
+                                                        font-size: 17px;
+                                                        margin-bottom: 15px;
+                                                    }
+
+                                                    .wa-button {
+                                                        display: block;
+                                                        width: 100%;
+                                                        padding: 12px;
+                                                        margin: 6px 0;
+                                                        background-color: #25D366;
+                                                        color: white;
+                                                        border: none;
+                                                        border-radius: 8px;
+                                                        font-size: 15px;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .wa-button:hover {
+                                                        background-color: #1ebe57;
+                                                    }
+
+                                                    .cancel-button {
+                                                        margin-top: 10px;
+                                                        padding: 10px 20px;
+                                                        background-color: #ccc;
+                                                        color: #333;
+                                                        border: none;
+                                                        border-radius: 8px;
+                                                        font-size: 14px;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .cancel-button:hover {
+                                                        background-color: #aaa;
+                                                    }
+                                                </style>
+
+                                                <!-- Script -->
+                                                <script>
+                                                    function showContactOptionsHubungi() {
+                                                        document.getElementById('contactOptionsHubungi').style.display = 'flex';
+                                                    }
+
+                                                    function hideContactOptionsHubungi() {
+                                                        document.getElementById('contactOptionsHubungi').style.display = 'none';
+                                                    }
+
+                                                    function openWhatsAppHubungi(phoneNumber) {
+                                                        window.open('https://wa.me/62' + phoneNumber + '?text=Halo%20Kinaara%20Resort', '_blank');
+                                                        hideContactOptionsHubungi();
+                                                    }
+                                                </script>
+
                                             </div>
-
-                                            <!-- Styling -->
-                                            <style>
-                                                .contact-popup {
-                                                    display: none;
-                                                    position: fixed;
-                                                    inset: 0;
-                                                    background: rgba(0, 0, 0, 0.4);
-                                                    z-index: 9999;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                }
-
-                                                .contact-popup-inner {
-                                                    background: #fff;
-                                                    padding: 25px 30px;
-                                                    border-radius: 12px;
-                                                    text-align: center;
-                                                    max-width: 90%;
-                                                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                                                }
-
-                                                .contact-popup-inner p {
-                                                    font-size: 17px;
-                                                    margin-bottom: 15px;
-                                                }
-
-                                                .wa-button {
-                                                    display: block;
-                                                    width: 100%;
-                                                    padding: 12px;
-                                                    margin: 6px 0;
-                                                    background-color: #25D366;
-                                                    color: white;
-                                                    border: none;
-                                                    border-radius: 8px;
-                                                    font-size: 15px;
-                                                    cursor: pointer;
-                                                }
-
-                                                .wa-button:hover {
-                                                    background-color: #1ebe57;
-                                                }
-
-                                                .cancel-button {
-                                                    margin-top: 10px;
-                                                    padding: 10px 20px;
-                                                    background-color: #ccc;
-                                                    color: #333;
-                                                    border: none;
-                                                    border-radius: 8px;
-                                                    font-size: 14px;
-                                                    cursor: pointer;
-                                                }
-
-                                                .cancel-button:hover {
-                                                    background-color: #aaa;
-                                                }
-                                            </style>
-
-                                            <!-- Script -->
-                                            <script>
-                                                function showContactOptionsHubungi() {
-                                                    document.getElementById('contactOptionsHubungi').style.display = 'flex';
-                                                }
-
-                                                function hideContactOptionsHubungi() {
-                                                    document.getElementById('contactOptionsHubungi').style.display = 'none';
-                                                }
-
-                                                function openWhatsAppHubungi(phoneNumber) {
-                                                    window.open('https://wa.me/62' + phoneNumber + '?text=Halo%20Kinaara%20Resort', '_blank');
-                                                    hideContactOptionsHubungi();
-                                                }
-                                            </script>
-
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -2688,7 +2715,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
                                                                     <span class="elementor-icon-list-icon">
                                                                         <i class="fa-brands fa-whatsapp"></i>
                                                                     </span>
-                                                                    <span class="elementor-icon-list-text">+62 852 5298 0695
+                                                                    <span class="elementor-icon-list-text">+62 852 5298
+                                                                        0695
                                                                     </span>
                                                                 </a>
                                                             </li>
@@ -2884,7 +2912,8 @@ $walekayuFamily = Room::where('name', 'Walekayu Family Suite')->first();
         </div>
     </div>
     <div id="wa"></div>
-    <div data-elementor-type="popup" data-elementor-id="122" class="elementor elementor-122 elementor-location-popup"
+    <div data-elementor-type="popup" data-elementor-id="122"
+        class="elementor elementor-122 elementor-location-popup"
         data-elementor-settings="{&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}"
         data-elementor-post-type="elementor_library">
         <div class="elementor-element elementor-element-2bc60b e-con-full e-flex e-con e-parent" data-id="2bc60b"

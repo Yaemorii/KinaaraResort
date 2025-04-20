@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="/img/KinaaraResortLogo.jpg" sizes="32x32" />
     <link rel="icon" href="/img/KinaaraResortLogo.png" sizes="192x192" />
-    <script>
+    {{-- <script>
         document.addEventListener("contextmenu", function(e) {
             e.preventDefault();
         });
@@ -37,7 +37,7 @@
             };
             setInterval(checkDevTools, 1000);
         })();
-    </script>
+    </script> --}}
     <style>
         :root {
             --sidebar-width: 250px;
@@ -127,34 +127,40 @@
             table-layout: fixed;
         }
 
-        .table td, .table th {
+        .table td,
+        .table th {
             vertical-align: middle;
             padding: 12px 8px;
             word-wrap: break-word;
         }
 
         /* Column Widths */
-        .table td:nth-child(1), /* Username */
+        .table td:nth-child(1),
+        /* Username */
         .table th:nth-child(1) {
             width: 20%;
         }
 
-        .table td:nth-child(2), /* Email */
+        .table td:nth-child(2),
+        /* Email */
         .table th:nth-child(2) {
             width: 25%;
         }
 
-        .table td:nth-child(3), /* Phone */
+        .table td:nth-child(3),
+        /* Phone */
         .table th:nth-child(3) {
             width: 15%;
         }
 
-        .table td:nth-child(4), /* Role */
+        .table td:nth-child(4),
+        /* Role */
         .table th:nth-child(4) {
             width: 15%;
         }
 
-        .table td:nth-child(5), /* Actions */
+        .table td:nth-child(5),
+        /* Actions */
         .table th:nth-child(5) {
             width: 25%;
             min-width: 150px;
@@ -171,7 +177,7 @@
             overflow: visible;
             white-space: normal;
             text-overflow: clip;
-            background-color: rgba(0,0,0,0.02);
+            background-color: rgba(0, 0, 0, 0.02);
             z-index: 1;
             position: relative;
         }
@@ -237,6 +243,7 @@
         }
 
         @media (max-width: 767.98px) {
+
             .card-body,
             .table-responsive {
                 padding: 15px;
@@ -322,6 +329,31 @@
                 width: 100%;
             }
         }
+
+        .table-responsive td[data-label="Harga per Malam"] {
+            flex-direction: column;
+            /* Mengatur elemen di dalam td menjadi kolom */
+            align-items: flex-start;
+            /* Mengatur perataan item ke kiri */
+        }
+
+        .table-responsive td[data-label="Harga per Malam"]:before {
+            display: block;
+            /* Membuat label terlihat di atas input */
+            margin-bottom: 0.5rem;
+            /* Memberikan sedikit jarak antara label dan input */
+            flex: none;
+            /* Mencegah label mengambil ruang yang tidak perlu */
+            width: 100%;
+            /* Membuat label selebar input */
+            text-align: left;
+            /* Meratakan teks label ke kiri */
+        }
+
+        .table-responsive td[data-label="Harga per Malam"] .input-group {
+            width: 100%;
+            /* Membuat input group selebar td */
+        }
     </style>
 </head>
 
@@ -396,8 +428,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
-        
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard Admin</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group me-2">
@@ -441,13 +474,13 @@
                                         <td data-label="Aksi">
                                             <div class="d-flex flex-wrap gap-2">
                                                 <button class="btn btn-sm btn-warning" data-bs-toggle="modal"
-                                                    data-bs-target="#editAccountModal"
-                                                    data-id="{{ $user->id }}"
+                                                    data-bs-target="#editAccountModal" data-id="{{ $user->id }}"
                                                     data-username="{{ $user->username }}"
                                                     data-email="{{ $user->email }}"
                                                     data-phone="{{ $user->phone }}"
                                                     data-role="{{ $user->role }}">
-                                                    <i class="fas fa-edit"></i> <span class="d-none d-md-inline">Edit</span>
+                                                    <i class="fas fa-edit"></i> <span
+                                                        class="d-none d-md-inline">Edit</span>
                                                 </button>
                                                 @if ($user->id !== Auth::id())
                                                     <form action="{{ route('users.destroy', $user->id) }}"
@@ -459,7 +492,8 @@
                                                             class="btn btn-sm btn-danger delete-btn"
                                                             data-id="{{ $user->id }}"
                                                             data-username="{{ $user->username }}">
-                                                            <i class="fas fa-trash"></i> <span class="d-none d-md-inline">Hapus</span>
+                                                            <i class="fas fa-trash"></i> <span
+                                                                class="d-none d-md-inline">Hapus</span>
                                                         </button>
                                                     </form>
                                                 @endif
@@ -500,12 +534,11 @@
                                             <div class="input-group mb-2 mb-md-0">
                                                 <span class="input-group-text">Rp</span>
                                                 <input type="number" class="form-control" name="price"
-                                                    value="{{ $room->price }}" min="0"
-                                                    step="1000">
+                                                    value="{{ $room->price }}" min="0" step="1000">
                                             </div>
                                     </td>
                                     <td data-label="Sisa Kamar">
-                                        <input type="number" class="form-control" name="available" 
+                                        <input type="number" class="form-control" name="available"
                                             value="{{ $room->available }}" min="0">
                                     </td>
                                     <td data-label="Aksi">
@@ -525,14 +558,16 @@
     </div>
 
     <!-- Add Account Modal -->
-    <div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <form action="{{ route('users.store') }}" method="POST">
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="addAccountModalLabel">Tambah Akun Baru</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
@@ -546,7 +581,8 @@
                         <div class="mb-3 position-relative">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>
-                            <span class="toggle-password" style="position: absolute; top: 75%; right: 20px; transform: translateY(-50%); cursor: pointer;">
+                            <span class="toggle-password"
+                                style="position: absolute; top: 75%; right: 20px; transform: translateY(-50%); cursor: pointer;">
                                 <i class="fa fa-eye" id="togglePassword"></i>
                             </span>
                         </div>
@@ -572,7 +608,8 @@
     </div>
 
     <!-- Edit Account Modal -->
-    <div class="modal fade" id="editAccountModal" tabindex="-1" aria-labelledby="editAccountModalLabel" aria-hidden="true">
+    <div class="modal fade" id="editAccountModal" tabindex="-1" aria-labelledby="editAccountModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <form id="editAccountForm" method="POST">
@@ -580,7 +617,8 @@
                     @method('PUT')
                     <div class="modal-header">
                         <h5 class="modal-title" id="editAccountModalLabel">Edit Akun</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
@@ -604,9 +642,10 @@
                         </div>
                         <div class="mb-3 position-relative">
                             <label for="new_password" class="form-label">Password Baru (Biarkan kosong jika tidak
-                                                                                ingin mengubah)</label>
+                                ingin mengubah)</label>
                             <input type="password" class="form-control" id="new_password" name="password">
-                            <span class="toggle-password" style="position: absolute; top: 75%; right: 20px; transform: translateY(-50%); cursor: pointer;">
+                            <span class="toggle-password"
+                                style="position: absolute; top: 75%; right: 20px; transform: translateY(-50%); cursor: pointer;">
                                 <i class="fa fa-eye" id="toggleNewPassword"></i>
                             </span>
                         </div>
@@ -632,7 +671,7 @@
         function toggleSidebar() {
             sidebar.classList.toggle('show');
             sidebarOverlay.classList.toggle('show');
-            
+
             if (sidebar.classList.contains('show')) {
                 document.body.style.overflow = 'hidden';
             } else {
@@ -718,7 +757,7 @@
         const passwordInput = document.getElementById('password');
         const togglePasswordIcon = document.getElementById('togglePassword');
         const togglePasswordSpan = document.querySelector('.toggle-password');
-    
+
         togglePasswordSpan.addEventListener('click', function() {
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
@@ -729,8 +768,9 @@
     <script>
         const newPasswordInput = document.getElementById('new_password');
         const toggleNewPasswordIcon = document.getElementById('toggleNewPassword');
-        const toggleNewPasswordSpan = document.querySelector('.mb-3.position-relative:last-child .toggle-password'); // Seleksi span yang benar
-    
+        const toggleNewPasswordSpan = document.querySelector(
+            '.mb-3.position-relative:last-child .toggle-password'); // Seleksi span yang benar
+
         toggleNewPasswordSpan.addEventListener('click', function() {
             const type = newPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             newPasswordInput.setAttribute('type', type);
@@ -738,7 +778,10 @@
             toggleNewPasswordIcon.classList.toggle('fa-eye-slash');
         });
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </body>
+
 </html>

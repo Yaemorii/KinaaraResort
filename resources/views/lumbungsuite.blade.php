@@ -649,10 +649,10 @@
                         <div class="elementor-widget-container">
                             <div class="jeg-elementor-kit jkit-post-featured-image jeg_module_233__67d67d67e1a4e">
                                 <div class="post-featured-image ">
-                                    <img width="517" height="381" src="/img/lumbungsuite.jpg"
+                                    <img width="517" height="381" src="/img/LumbungSuite.jpg"
                                         class="attachment-full size-full wp-post-image" alt=""
                                         decoding="async"
-                                        srcset="/img/lumbungsuite.jpg 517w, /img/lumbungsuite.jpg 300w"
+                                        srcset="/img/LumbungSuite.jpg 517w, /img/LumbungSuite.jpg 300w"
                                         sizes="(max-width: 517px) 100vw, 517px" />
                                 </div>
                             </div>
@@ -841,11 +841,14 @@
                             <h2 style="margin-bottom: 30px;">Detail Fasilitas</h2>
 
                             <div style="margin-bottom: 30px;">
-                                <h5><i class="fa-solid fa-expand" style="margin-right: 17px;"></i>50 Meter Persegi</h5>
-                                <h5><i class="fa-solid fa-users" style="margin-right: 13px;"></i>Kapasitas 3 Orang</h5>
-                                <h5><i class="fa-solid fa-bed" style="margin-right: 13px;"></i>1 King Bed atau 1 Twin Bed</h5>
+                                <h5><i class="fa-solid fa-expand" style="margin-right: 17px;"></i>50 Meter Persegi
+                                </h5>
+                                <h5><i class="fa-solid fa-users" style="margin-right: 13px;"></i>Kapasitas 3 Orang
+                                </h5>
+                                <h5><i class="fa-solid fa-bed" style="margin-right: 13px;"></i>1 King Bed atau 1 Twin
+                                    Bed</h5>
                             </div>
-                            
+
                             <div style="display: flex; flex-wrap: wrap; gap: 20px;">
                                 <!-- Kolom Kiri -->
                                 <div style="flex: 1 1 45%;">
@@ -968,110 +971,110 @@
                                             data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <!-- Tombol asli Elementor -->
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-button-wrapper">
-                                                    <button
-                                                        class="elementor-button elementor-button-link elementor-size-sm"
-                                                        onclick="showContactOptionsHubungi()">
-                                                        <span class="elementor-button-content-wrapper">
-                                                            <span class="elementor-button-text">Hubungi Kami</span>
-                                                        </span>
-                                                    </button>
+                                                <div class="elementor-widget-container">
+                                                    <div class="elementor-button-wrapper">
+                                                        <button
+                                                            class="elementor-button elementor-button-link elementor-size-sm"
+                                                            onclick="showContactOptionsHubungi()">
+                                                            <span class="elementor-button-content-wrapper">
+                                                                <span class="elementor-button-text">Hubungi Kami</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
                                                 </div>
+
+                                                <!-- Popup Pilihan Admin -->
+                                                <div id="contactOptionsHubungi" class="contact-popup">
+                                                    <div class="contact-popup-inner">
+                                                        <p>Pilih Admin yang ingin dihubungi:</p>
+                                                        <button class="wa-button"
+                                                            onclick="openWhatsAppHubungi('085252980695')">Admin 1
+                                                            (085252980695)</button>
+                                                        <button class="wa-button"
+                                                            onclick="openWhatsAppHubungi('081288598899')">Admin 2
+                                                            (081288598899)</button>
+                                                        <button class="cancel-button"
+                                                            onclick="hideContactOptionsHubungi()">Batal</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Styling -->
+                                                <style>
+                                                    .contact-popup {
+                                                        display: none;
+                                                        position: fixed;
+                                                        inset: 0;
+                                                        background: rgba(0, 0, 0, 0.4);
+                                                        z-index: 9999;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+
+                                                    .contact-popup-inner {
+                                                        background: #fff;
+                                                        padding: 25px 30px;
+                                                        border-radius: 12px;
+                                                        text-align: center;
+                                                        max-width: 90%;
+                                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                                                    }
+
+                                                    .contact-popup-inner p {
+                                                        font-size: 17px;
+                                                        margin-bottom: 15px;
+                                                    }
+
+                                                    .wa-button {
+                                                        display: block;
+                                                        width: 100%;
+                                                        padding: 12px;
+                                                        margin: 6px 0;
+                                                        background-color: #25D366;
+                                                        color: white;
+                                                        border: none;
+                                                        border-radius: 8px;
+                                                        font-size: 15px;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .wa-button:hover {
+                                                        background-color: #1ebe57;
+                                                    }
+
+                                                    .cancel-button {
+                                                        margin-top: 10px;
+                                                        padding: 10px 20px;
+                                                        background-color: #ccc;
+                                                        color: #333;
+                                                        border: none;
+                                                        border-radius: 8px;
+                                                        font-size: 14px;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .cancel-button:hover {
+                                                        background-color: #aaa;
+                                                    }
+                                                </style>
+
+                                                <!-- Script -->
+                                                <script>
+                                                    function showContactOptionsHubungi() {
+                                                        document.getElementById('contactOptionsHubungi').style.display = 'flex';
+                                                    }
+
+                                                    function hideContactOptionsHubungi() {
+                                                        document.getElementById('contactOptionsHubungi').style.display = 'none';
+                                                    }
+
+                                                    function openWhatsAppHubungi(phoneNumber) {
+                                                        window.open('https://wa.me/62' + phoneNumber + '?text=Halo%20Kinaara%20Resort', '_blank');
+                                                        hideContactOptionsHubungi();
+                                                    }
+                                                </script>
+
                                             </div>
 
-                                            <!-- Popup Pilihan Admin -->
-                                            <div id="contactOptionsHubungi" class="contact-popup">
-                                                <div class="contact-popup-inner">
-                                                    <p>Pilih Admin yang ingin dihubungi:</p>
-                                                    <button class="wa-button"
-                                                        onclick="openWhatsAppHubungi('085252980695')">Admin 1
-                                                        (085252980695)</button>
-                                                    <button class="wa-button"
-                                                        onclick="openWhatsAppHubungi('081288598899')">Admin 2
-                                                        (081288598899)</button>
-                                                    <button class="cancel-button"
-                                                        onclick="hideContactOptionsHubungi()">Batal</button>
-                                                </div>
-                                            </div>
-
-                                            <!-- Styling -->
-                                            <style>
-                                                .contact-popup {
-                                                    display: none;
-                                                    position: fixed;
-                                                    inset: 0;
-                                                    background: rgba(0, 0, 0, 0.4);
-                                                    z-index: 9999;
-                                                    justify-content: center;
-                                                    align-items: center;
-                                                }
-
-                                                .contact-popup-inner {
-                                                    background: #fff;
-                                                    padding: 25px 30px;
-                                                    border-radius: 12px;
-                                                    text-align: center;
-                                                    max-width: 90%;
-                                                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                                                }
-
-                                                .contact-popup-inner p {
-                                                    font-size: 17px;
-                                                    margin-bottom: 15px;
-                                                }
-
-                                                .wa-button {
-                                                    display: block;
-                                                    width: 100%;
-                                                    padding: 12px;
-                                                    margin: 6px 0;
-                                                    background-color: #25D366;
-                                                    color: white;
-                                                    border: none;
-                                                    border-radius: 8px;
-                                                    font-size: 15px;
-                                                    cursor: pointer;
-                                                }
-
-                                                .wa-button:hover {
-                                                    background-color: #1ebe57;
-                                                }
-
-                                                .cancel-button {
-                                                    margin-top: 10px;
-                                                    padding: 10px 20px;
-                                                    background-color: #ccc;
-                                                    color: #333;
-                                                    border: none;
-                                                    border-radius: 8px;
-                                                    font-size: 14px;
-                                                    cursor: pointer;
-                                                }
-
-                                                .cancel-button:hover {
-                                                    background-color: #aaa;
-                                                }
-                                            </style>
-
-                                            <!-- Script -->
-                                            <script>
-                                                function showContactOptionsHubungi() {
-                                                    document.getElementById('contactOptionsHubungi').style.display = 'flex';
-                                                }
-
-                                                function hideContactOptionsHubungi() {
-                                                    document.getElementById('contactOptionsHubungi').style.display = 'none';
-                                                }
-
-                                                function openWhatsAppHubungi(phoneNumber) {
-                                                    window.open('https://wa.me/62' + phoneNumber + '?text=Halo%20Kinaara%20Resort', '_blank');
-                                                    hideContactOptionsHubungi();
-                                                }
-                                            </script>
-
-                                        </div>
-                                    
                                         </div>
                                     </div>
                                 </div>
@@ -1131,7 +1134,8 @@
                                                                     <span class="elementor-icon-list-icon">
                                                                         <i class="fa-brands fa-whatsapp"></i>
                                                                     </span>
-                                                                    <span class="elementor-icon-list-text">+62 852 5298 0695
+                                                                    <span class="elementor-icon-list-text">+62 852 5298
+                                                                        0695
                                                                     </span>
                                                                 </a>
                                                             </li>
